@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Waves of Wonders Taiwan Entry - JGE</title>
+
+    <!-- ✅ Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.9);
+            border-bottom: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+            color: #ff6a00;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            flex-wrap: wrap;
+        }
+
+        .slideshow {
+            flex: 1 1 450px;
+            max-width: 100%;
+            aspect-ratio: 1 / 1;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: #000;
+        }
+
+        .mySlides {
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+
+        .mySlides img,
+        .mySlides video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background: #000;
+            border-radius: 10px;
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 50%;
+            font-size: 18px;
+            user-select: none;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .caption {
+            flex: 1 1 400px;
+            max-width: 100%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .caption h2 {
+            margin-top: 0;
+            color: #ff6a00;
+        }
+
+        .caption p {
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+
+        .hashtags {
+            color: #00376b;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 1em;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.6);
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        footer a:hover {
+            color: #1877f2;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .slideshow,
+            .caption {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Our adventure riding the Waves of Wonder in Taiwan 🇹🇼</h1>
+    </header>
+
+    <div class="container">
+        <div class="slideshow">
+            <div class="mySlides"><img src="0.jpeg" alt=""></div>
+            <div class="mySlides"><img src="1.jpeg" alt=""></div>
+            <div class="mySlides"><img src="2.jpeg" alt=""></div>
+            <div class="mySlides"><img src="3.jpeg" alt=""></div>
+            <div class="mySlides"><img src="4.jpeg" alt=""></div>
+            <div class="mySlides"><img src="5.jpeg" alt=""></div>
+            <div class="mySlides"><img src="6.jpeg" alt=""></div>
+            <div class="mySlides"><img src="7.jpeg" alt=""></div>
+            <div class="mySlides"><img src="8.jpeg" alt=""></div>
+            <div class="mySlides"><img src="9.jpeg" alt=""></div>
+            <div class="mySlides"><img src="10.jpeg" alt=""></div>
+            <div class="mySlides"><img src="11.jpeg" alt=""></div>
+            <div class="mySlides"><img src="12.jpeg" alt=""></div>
+            <div class="mySlides"><img src="13.jpeg" alt=""></div>
+            <div class="mySlides"><img src="14.jpeg" alt=""></div>
+            <div class="mySlides"><img src="15.jpeg" alt=""></div>
+            <div class="mySlides"><img src="16.jpeg" alt=""></div>
+
+            <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
+            <span class="next" onclick="plusSlides(1)">&#10095;</span>
+        </div>
+
+        <div class="caption">
+            <h2>Julius Glenn Espiritu</h2>
+            <p>
+                Here are my collections of photos during our unforgettable vacation in Taiwan. 🇹🇼
+                Every moment was filled with excitement. From exploring beautiful places, enjoying delicious food,
+                and experiencing the warm hospitality of the people.
+            </p>
+            <p>
+                Taiwan gave us memories to treasure forever. A perfect mix of culture, adventure, and relaxation
+                that made our trip truly special.
+            </p>
+            <p>“Here’s how I ride the Waves of Wonder in Taiwan!”</p>
+            <p class="hashtags">#WavesOfWonderPH #TaympersSaTaiwan</p>
+            <p>Tagging @TaiwanTourismPH and my travel buddies! ❤️</p>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://facebook.com/espiritujulius" target="_blank">
+            <i class="fa-brands fa-facebook"></i> facebook.com/espiritujulius
+        </a>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+
+                let vid = slides[i].querySelector("video");
+                if (vid) {
+                    vid.pause();
+                }
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>
